@@ -34,7 +34,49 @@ function createEvenArray() {
         }
     }
 }
+// console.log(
+
+//     createEvenArray()
+// )
+
+// --------------------------
+// a function that can have multiple params
+
+var bob = 1;
+var alice = 2;
+
+function addition(num1, num2) {
+    var total = num1 + num2;
+    return total;
+
+}
+
+// console.log(addition(alice, bob))
+
+// ---------------------------
+//             0  1   2  3
+var numbers = [11,22,33,44]; // 4
+
+function loopOver(numArray) {
+
+    var totalOdds = 0;
+    
+    // loop over the array
+    for(var i=numArray.length-1; i >= 0; i--) {
+        // only log odd numbers
+        if(numArray[i] % 2 !== 0) {
+            totalOdds = totalOdds + numArray[i]
+        }
+    }
+
+    // return at the end of the loop
+    return totalOdds
+}
 console.log(
 
-    createEvenArray()
+    loopOver(numbers)
 )
+
+
+
+
